@@ -104,9 +104,123 @@
 //     console.log(Math.floor(Math.random() * 6) + 1);
 // }
 
-function nyanyi(){
-    console.log("cek...");
-    console.log("do re mi...");
-}
+// function nyanyi(){
+//     console.log("cek...");
+//     console.log("do re mi...");
+// }
 
-nyanyi();
+// nyanyi();
+
+// function selamatPagi(name){
+//     console.log(`Halo ${name} selamat pagi`);
+// }
+// selamatPagi('Ary');
+
+// function jumlahkan(a = 0 , b = 0){
+//     const total = a + b;
+//    return total
+// }
+// jumlahkan(1,2);
+
+// function jumlahkan(a, b){
+//     if(typeof a !== 'number' || typeof b !== 'number'){
+//         return 'bukan angka';
+//     }
+//         return a + b;
+    
+// }
+
+// let programming = 'javascript';
+
+// function typeSafe(){
+//    let programming = 'type script';
+//    console.log(programming);
+// }
+// typeSafe();
+// console.log(programming);
+
+// let tinggi = 8;
+// if( tinggi > 5){
+//     var lebar = 10;
+//     console.log(lebar);
+// }
+// console.log('lebar:', lebar);
+
+// for (let index = 0; index < 10; index++) {
+//     lebar = index;
+//     var indexNumber = index;
+//     console.log(indexNumber);
+// }
+// console.log('index:', indexNumber);
+// console.log('lebar:', lebar);
+// function lamarKerja(){
+//     const jabatan = 'Programmer';
+//     function orangDalam(){
+//         let kenalan = `Orang dalam dapat memasukkan ${jabatan}`;
+//         console.log(kenalan);
+//     }
+
+//     orangDalam();
+// }
+
+// function perpangkatan(nilai){
+//     return nilai * nilai
+// }
+
+// let hasil = perpangkatan(10);
+
+// const hasilPerpangkatan = function(nilai, pembanding){
+//     return nilai * pembanding;
+// }
+
+// function duaKali(func){
+//     func();
+//     func();
+// }
+
+// function lemparDadu(){
+//     const hasil = Math.floor(Math.random() * 6) + 1;
+//     console.log(hasil);
+// }
+
+// function hasilnyaAdalahFunction(){
+//     const rand = Math.random();
+//     if(rand > 0.1){
+//         return function(){
+//             console.log('Selamat, angkanya lebih besar');
+//         };
+//     }else{
+//         return function(){
+//             console.log('maaf, mungkn bisa coba lagi');
+//         };
+//     }
+// }
+
+// const myMath = {
+//     perkalian: function(x,y){
+//         return x * y;
+//     },
+// }
+
+// const saya = {
+//     nama: 'ary',
+//     hobi: 'musik',
+//     kenalan: function(){
+//         return `Hi, Nama saya ${this.nama}. hobi saya ${this.hobi}.`
+//     }
+// }
+
+// try {
+//     saya.kenalan()
+// } catch{
+//     console.log('Error!!!.');
+// }
+
+function teriak(msg){
+    try {
+        console.log(msg.toUpperCase());
+    } catch (error) {
+        console.log(error);
+        console.log('Silahkan masukkan tipe data string pada agrumen teriak()');
+    }
+}
