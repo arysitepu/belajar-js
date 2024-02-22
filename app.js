@@ -216,11 +216,352 @@
 //     console.log('Error!!!.');
 // }
 
-function teriak(msg){
-    try {
-        console.log(msg.toUpperCase());
-    } catch (error) {
-        console.log(error);
-        console.log('Silahkan masukkan tipe data string pada agrumen teriak()');
-    }
-}
+// function teriak(msg){
+//     try {
+//         console.log(msg.toUpperCase());
+//     } catch (error) {
+//         console.log(error);
+//         console.log('Silahkan masukkan tipe data string pada agrumen teriak()');
+//     }
+// }
+
+// const angka = [1,2,3,4,5,6,7,8,9];
+
+// function print(element){
+//     console.log(element);
+// }
+// angka.forEach(print);
+
+// const angka = [1,2,3,4,5,6,7,8,9];
+
+// angka.forEach(function(el){
+//     if(el % 2 === 0){
+//         console.log(el);
+//     }
+// });
+
+// const animes = [
+//     {
+//         title: 'Attack on titan',
+//         rating: 90
+//     },
+//     {
+//         title: 'Naruto',
+//         rating: 89
+//     },
+//     {
+//         title: 'One piece',
+//         rating: 82
+//     },
+//     {
+//         title: 'Bleach',
+//         rating: 80
+//     },
+//     {
+//         title: 'Tokyo revenge',
+//         rating: 88
+//     },
+//     {
+//         title: 'Hunter x Hunter',
+//         rating: 87
+//     },
+// ];
+
+// animes.forEach(function(anime){
+//     console.log(`${anime.title} - ${anime.rating}/100`);
+// });
+
+// const angka = [1,2,3,4,5,6,7,8,9];
+// const angkaDouble = angka.map(function(num){
+//     return num * 2;
+// });
+
+// const animes = [
+//     {
+//         title: 'Attack on titan',
+//         rating: 90
+//     },
+//     {
+//         title: 'Naruto',
+//         rating: 89
+//     },
+//     {
+//         title: 'One piece',
+//         rating: 82
+//     },
+//     {
+//         title: 'Bleach',
+//         rating: 80
+//     },
+//     {
+//         title: 'Tokyo revenge',
+//         rating: 88
+//     },
+//     {
+//         title: 'Hunter x Hunter',
+//         rating: 87
+//     },
+// ];
+
+// const animeList = animes.map(function(anime){
+//     return anime.title.toUpperCase();
+// });
+
+// const perpangkatan = (x) => {
+//     return x*x;
+// }
+
+// const random = () => {
+//     return Math.floor(Math.random() * 1000);
+// }
+
+
+// const random = () => (
+//     Math.floor(Math.random() * 1000)
+// );
+
+// const add = (a,b) => a + b
+
+// console.log('halo');
+
+// setTimeout(() => {
+//     console.log('masih disana gak?.');
+// }, 3000);
+// console.log('saya pergi iyaa...');
+
+// setInterval(() => {
+//     console.log(Math.random());
+// }, 2000);
+
+// const interval = setInterval(() => {
+//         console.log(Math.random());
+//     }, 2000);
+
+// const angka = [1,2,3,4,5,6,7,8,9];
+// const angkaGanjil = angka.filter((n) => {
+//     return n % 2 === 1;
+// });
+// const angkaBaru = angka.filter((n) => {
+//     return n < 5;
+// });
+
+// const animes = [
+//     {
+//         title: 'Attack on titan',
+//         rating: 90,
+//         year: 2010
+//     },
+//     {
+//         title: 'Naruto',
+//         rating: 89
+//     },
+//     {
+//         title: 'One piece',
+//         rating: 82,
+//         year: 2012
+//     },
+//     {
+//         title: 'Bleach',
+//         rating: 80,
+//         year: 2009
+//     },
+//     {
+//         title: 'Tokyo revenge',
+//         rating: 88,
+//         year: 2007
+//     },
+//     {
+//         title: 'Hunter x Hunter',
+//         rating: 87,
+//         year: 2005
+//     },
+// ];
+// const animeBagus = animes.filter((anime) => anime.rating >= 85);
+// const judulAnimeBagus = animeBagus.map((anime) => anime.title);
+// const cukupBagus = animes.filter((anime) => anime.rating < 85);
+// const animeBaru = animes.filter((anime) => anime.year > 2010);
+
+// const examScore = [80,85,70,90,93,77];
+// const isGraduate = examScore.every((score) => score >= 75);
+
+// const animes = [
+//     {
+//         title: 'Attack on titan',
+//         rating: 90,
+//         year: 2010
+//     },
+//     {
+//         title: 'Naruto',
+//         rating: 89
+//     },
+//     {
+//         title: 'One piece',
+//         rating: 82,
+//         year: 2012
+//     },
+//     {
+//         title: 'Bleach',
+//         rating: 80,
+//         year: 2009
+//     },
+//     {
+//         title: 'Tokyo revenge',
+//         rating: 88,
+//         year: 2007
+//     },
+//     {
+//         title: 'Hunter x Hunter',
+//         rating: 87,
+//         year: 2005
+//     },
+// ];
+// const isAnimeListNew = animes.some((anime) => anime.year > 2020);
+
+// const examScore = [80,85,70,90,93,77];
+
+// const total = examScore.reduce((total, score) => {
+//     return total + score;
+// });
+
+// const animes = [
+//     {
+//         title: 'Attack on titan',
+//         rating: 82,
+//         year: 2010
+//     },
+//     {
+//         title: 'Naruto',
+//         rating: 90
+//     },
+//     {
+//         title: 'One piece',
+//         rating: 82,
+//         year: 2012
+//     },
+//     {
+//         title: 'Bleach',
+//         rating: 80,
+//         year: 2009
+//     },
+//     {
+//         title: 'Tokyo revenge',
+//         rating: 88,
+//         year: 2007
+//     },
+//     {
+//         title: 'Hunter x Hunter',
+//         rating: 77,
+//         year: 2005
+//     },
+// ];
+// const bestAnime = animes.reduce((bestAnime, currAnime) => {
+//     console.log(bestAnime, currAnime);
+//     if(currAnime.rating > bestAnime.rating){
+//         return currAnime;
+//     }
+//     return bestAnime;
+// });
+
+// const person = {
+//     firstName: 'John',
+//     lastName: 'Doe',
+//     fullName: () => {
+//         return `${this.firstName} ${this.lastName}`;
+//     },
+
+//     panggilNanti: function(){
+//         setTimeout(function(){
+//             console.log(this.firstName);
+//         }, 3000);
+//     }
+// };
+
+// function lemparDadu(sisi = 6){
+// return Math.floor(Math.random() * sisi) + 1;
+// }
+
+// function sapa(name ='user', msg= 'selamat bekerja'){
+//     console.log(`${name}, ${msg}`);
+// }
+
+// const angka = [1,2,3,4,5,6,7,8,9];
+// const nama = ['Alex', 'Bimo', 'Cici', 'Delila', 'Felix'];
+// const campuran = [...angka, ...nama];
+
+// const user = {
+//     name: 'John',
+//     email: 'john@doe.com'
+// };
+
+// const credential = {
+//     password: 'password',
+//     token: 'asfbwuirb34buy3b4hbkj'
+// };
+// const userBaru = {...user, ...credential};
+
+// const sumAll = (...nums) => {
+//     return nums.reduce((total, el) => total + el);
+// }
+
+// const nama = ['Alex', 'Bimo', 'Cici', 'Delila', 'Felix'];
+// const pemenang = (gold, silver, bronze, ...lain)=> {
+//     console.log(`Medali emas di raih: ${gold}`);
+//     console.log(`Medali silver di raih: ${silver}`);
+//     console.log(`Medali bronze di raih: ${bronze}`);
+//     console.log(`peserta lainnya: ${lain}`)
+// };
+
+// const [gold, silver, bronze, ...peserta] = nama;
+
+// const user = {
+//     name: 'John',
+//     email: 'john@doe.com'
+// };
+
+// const {name: nama, email, phone= '535344534'} = user;
+
+// const user = {
+//     name: 'John',
+//     email: 'john@doe.com',
+//     role: 'Admin'
+// };
+
+// const userAndRole = ({name, role}) => {
+//     return `${name} ${role}`;
+// };
+
+const animes = [
+    {
+        title: 'Attack on titan',
+        rating: 82,
+        year: 2010
+    },
+    {
+        title: 'Naruto',
+        rating: 90,
+        year: 1995
+    },
+    {
+        title: 'One piece',
+        rating: 82,
+        year: 2012
+    },
+    {
+        title: 'Bleach',
+        rating: 80,
+        year: 2009
+    },
+    {
+        title: 'Tokyo revenge',
+        rating: 88,
+        year: 2007
+    },
+    {
+        title: 'Hunter x Hunter',
+        rating: 77,
+        year: 2005
+    },
+];
+const anime = animes.map(({title, year, rating}) => {
+    return `${title} (${year}) rating ${rating}`;
+});
